@@ -59,3 +59,63 @@ body{
     height: 100vh;
 }
 
+#explicacao > h2{
+    font-size: 4rem;
+}
+
+#explicacao > p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#explicacao > button{
+    background: #242424;
+    color: #dadada;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#explicacao > button:hover{
+    background: #dadada;
+    color: #242424;
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#exemplos{
+    display: flex;
+    color: #dadada;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#exemplos > h2{
+    font-size: 4rem;
+}
+
+#exemplos > ul{
+    font-size: 2rem;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#exemplos > button {
+    background: #242424;
+    color: #dadada;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#exemplos > button:hover{
+    background: #dadada;
+    color: #242424;
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
