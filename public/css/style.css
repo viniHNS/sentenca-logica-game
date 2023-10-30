@@ -2,8 +2,9 @@
 
 /* Variáveis */
 :root{
-    --vermelho: #fb3b3b;
+    --vermelho: #fd3131;
     --verde: #3bfb3b;
+    --verde-escuro: #289328;
     --bg-btn: #242424;
     --bg-btn-hover: #dadada;
     --text-color: #dadada;
@@ -35,8 +36,8 @@ body{
     font-size: 1.2rem;
 }
 
-.esconder{
-    display: none;
+.bold{
+    font-weight: bold;
 }
 
 #comeco{
@@ -215,8 +216,14 @@ body{
     margin-top: 1rem;
 }
 
-#desafio > .respostas > button:hover{
-    background: var(--bg-btn-hover);
+#desafio > .respostas > .btn-resposta-verdade:hover{
+    background: var(--verde-escuro);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#desafio > .respostas > .btn-resposta-falso:hover{
+    background: var(--vermelho);
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
