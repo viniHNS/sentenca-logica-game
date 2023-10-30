@@ -14,30 +14,30 @@
     <button type="button" id="btn-comecar" onclick="comecarGame()">Começar</button>
   </div>
 
-  <div id="explicacao" class="esconder">
+  <div id="explicacao" style="display: none;">
     <h2>O que é uma sentença lógica? 🤔</h2>
     <p>Sentença lógica é uma frase, geralmente curta, que possui somente 2 respostas: VERDADEIRO ou FALSO</p>
     <button type="button" id="btn-continuar" onclick="mostrarExemplos()">Continuar</button>
   </div>
 
-  <div id="exemplos" class="esconder">
+  <div id="exemplos" style="display: none;">
     <h2>Alguns exemplos:</h2>
     <ul>
-      <li>2 + 2 = 4 <span style="color: rgb(102, 255, 107); font-weight: bold;">( VERDADE )</span></li>
-      <li>2 + 2 = 5 <span style="color: red; font-weight: bold;">( FALSO )</span></li>
-      <li>5 = 55 <span style="color: red; font-weight: bold;">( FALSO )</span></li>
+      <li>2 + 2 = 4 <span class="texto-verde bold">( VERDADE )</span></li>
+      <li>2 + 2 = 5 <span class="texto-vermelho bold">( FALSO )</span></li>
+      <li>5 = 55 <span class="texto-vermelho bold">( FALSO )</span></li>
     </ul>
     <button type="button" id="btn-continuar-desafio" onclick="mostrarPreparados()">Continuar</button>
   </div>
 
-  <div id="preparados" class="esconder">
+  <div id="preparados" style="display: none;">
     <h2>Vamos fazer um desafio 🤯</h2>
     <h5>Você deve ler a sentença lógica e escolher se ela é <span class="texto-verde">VERDADEIRA</span> ou <span class="texto-vermelho">FALSA</span></h5>
     <h5>Se você acertar, a sentença ficará <span class="texto-verde">verde</span>, se errar, ficará <span class="texto-vermelho">vermelha</span>.</h5>
     <button type="button" id="btn-comecar-desafio" onclick="comecarDesafio()">Começar</button>
   </div>
 
-  <div id="desafio" class="esconder">
+  <div id="desafio" style="display: none;">
     <h2>Cachorros são mamíferos.</h2>
     <div class="respostas">
       <button type="button" class="btn-resposta-verdade" onclick="responder('verdadeiro')">Verdadeiro</button>
