@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Senteças Lógicas</title>
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
     <div id="comeco">
-        <h1>Sentenças Lógicas</h1>
-        <button type="button" id="btn-comecar">Começar</button>
+      <h1>Sentenças Lógicas</h1>
+      <button type="button" id="btn-comecar" onclick="comecarGame()">Começar</button>
     </div>
-    
+
+    <div id="explicacao" style="display: none;">
+        <h2>O que é uma sentença lógica</h2>
+        <p>Sentença lógica é uma frase, geralmente curta, que possui somente 2 respostas: VERDADEIRO ou FALSO</p>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
+      integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="/public/js/script.js"></script>
-</body>
+  </body>
 </html>
