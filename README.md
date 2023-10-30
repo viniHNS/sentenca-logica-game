@@ -29,6 +29,7 @@ Depois de clonar o repositório, você pode abrir o arquivo `index.html` em seu 
 - **[Font Awesome](https://fontawesome.com/):** Para ícones.
 - **[Google Fonts](https://fonts.google.com/):** Para fontes personalizadas.
 - **[tsParticles](https://particles.js.org/):** Para efeitos de partículas.
+- **[SweetAlert2](https://sweetalert2.github.io/):** Para alertas personalizados.
 
 ## Como Contribuir
 
