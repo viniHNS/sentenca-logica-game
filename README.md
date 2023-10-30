@@ -8,11 +8,25 @@ Este repositório contém um minigame educacional desenvolvido em HTML, CSS e Ja
 
 O jogo é simples e intuitivo. Os jogadores serão apresentados a várias sentenças lógicas e devem determinar se cada sentença é verdadeira ou falsa. Eles podem fazer suas escolhas clicando nas opções fornecidas na interface do jogo. Pontuações serão atribuídas com base na precisão das respostas.
 
+## Como instalar
+
+Para instalar o jogo, basta clonar este repositório em seu computador local. Você pode fazer isso executando o seguinte comando em seu terminal:
+
+```bash
+git clone https://github.com/viniHNS/sentenca-logica-game.git
+```
+
+Depois de clonar o repositório, você pode abrir o arquivo `index.html` em seu navegador para iniciar o jogo.
+
 ## Tecnologias Usadas
 
 - **HTML:** A estrutura básica da página do jogo.
 - **CSS:** Estilos e layout do jogo para torná-lo atraente e responsivo.
 - **JavaScript:** A lógica por trás do jogo, incluindo a geração de sentenças lógicas e a verificação de respostas.
+
+## Bibliotecas Utilizadas
+
+- **[Font Awesome](https://fontawesome.com/):** Para ícones.
 
 ## Como Contribuir
 
