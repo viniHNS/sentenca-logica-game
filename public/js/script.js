@@ -48,7 +48,30 @@ function mostrarPreparados(){
     
 
     blocoPreparados.style.display = 'flex';
+    blocoPreparados.style.opacity = 0;
+    blocoPreparados.style.transition = 'opacity 1.5s';
     setTimeout(function(){
         blocoPreparados.style.opacity = 1;
     }, 1000);
+}
+
+function comecarDesafio(){
+    const blocoPreparados = document.getElementById('preparados');
+    const blocoDesafio = document.getElementById('desafio');
+
+    blocoPreparados.style.opacity = 0;
+    blocoPreparados.style.transition = 'opacity 1s';
+    setTimeout(function(){
+        blocoPreparados.style.display = 'none';
+    }, 1000);
+    
+
+    blocoDesafio.style.display = 'flex';
+    blocoDesafio.style.opacity = 0;
+    blocoDesafio.style.transition = 'opacity 1.5s';
+    setTimeout(function(){
+        blocoDesafio.style.opacity = 1;
+    }, 1000);
+
+    
 }
