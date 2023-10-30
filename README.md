@@ -1,0 +1,1 @@
+# sentenca-logica-game
