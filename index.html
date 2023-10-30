@@ -27,9 +27,17 @@
       <li>2 + 2 = 5 <span style="color: red; font-weight: bold;">( FALSO )</span></li>
       <li>5 = 55 <span style="color: red; font-weight: bold;">( FALSO )</span></li>
     </ul>
-    <button type="button" id="btn-continuar-desafio" onclick="">Continuar</button>
+    <button type="button" id="btn-continuar-desafio" onclick="mostrarPreparados()">Continuar</button>
   </div>
-  
+
+  <div id="preparados" style="display: none;">
+    <h2>Vamos fazer um desafio 🤯</h2>
+    <h5>Você deve ler a sentença lógica e escolher se ela é <span class="texto-verde">VERDADEIRA</span> ou <span class="texto-vermelho">FALSA</span></h5>
+    <h5>Se você acertar, a sentença ficará <span class="texto-verde">verde</span>, se errar, ficará <span class="texto-vermelho">vermelha</span>.</h5>
+    <button type="button" id="btn-comecar-desafio" onclick="comecarDesafio()">Começar</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://kit.fontawesome.com/62c44247f4.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
     integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
