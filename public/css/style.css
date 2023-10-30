@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Variáveis */
+:root{
+    --vermelho: #fb3b3b;
+    --verde: #3bfb3b;
+    --bg-btn: #242424;
+    --bg-btn-hover: #dadada;
+    --text-color: #dadada;
+    --text-color-hover: #000000;
+}
+
+/* Reset */
 *{
     padding: 0;
     margin: 0;
@@ -11,8 +22,16 @@ body{
     background: #111111;
 }
 
+.texto-vermelho{
+    color: var(--vermelho);
+}
+
+.texto-verde{
+    color: var(--verde);
+}
+
 .texto{
-    color: #fff;
+    color: var(--text-color);
     font-size: 1.2rem;
 }
 
@@ -23,12 +42,12 @@ body{
     align-items: center;
     height: 100vh;
     font-size: 5rem;
-    color: #fff;
+    color: var(--text-color);
 }
 
 #btn-comecar{
-    background: #242424;
-    color: #dadada;
+    background: var(--bg-btn);
+    color: var(--text-color);
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
@@ -37,11 +56,12 @@ body{
 }
 
 #btn-comecar:hover{
-    background: #dadada;
-    color: #242424;
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
+/*Animacao botão pulsando*/
 @keyframes btn-comecar{
     0%{
         transform: scale(1);
@@ -52,7 +72,7 @@ body{
 }
 
 #explicacao{
-    color: #dadada;
+    color: var(--text-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,8 +89,8 @@ body{
 }
 
 #explicacao > button{
-    background: #242424;
-    color: #dadada;
+    background: var(--bg-btn);
+    color: var(--text-color);
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
@@ -79,14 +99,14 @@ body{
 }
 
 #explicacao > button:hover{
-    background: #dadada;
-    color: #242424;
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
 #exemplos{
     display: flex;
-    color: #dadada;
+    color: var(--text-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -104,8 +124,8 @@ body{
 }
 
 #exemplos > button {
-    background: #242424;
-    color: #dadada;
+    background: var(--bg-btn);
+    color: var(--text-color);
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
@@ -115,7 +135,44 @@ body{
 }
 
 #exemplos > button:hover{
-    background: #dadada;
-    color: #242424;
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
+
+#preparados{
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#preparados > h2{
+    font-size: 4rem;
+}
+
+#preparados > h5{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+#preparados > button{
+    background: var(--bg-btn);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#preparados > button:hover{
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+
