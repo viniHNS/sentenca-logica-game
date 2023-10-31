@@ -17,8 +17,10 @@ git clone https://github.com/viniHNS/sentenca-logica-game.git
 ```
 Ou você pode baixar o repositório como um arquivo ZIP e extrair o arquivo em seu computador local.
 
-Depois de clonar ou baixar o repositório, você pode abrir o arquivo `index.html` em seu navegador para iniciar o jogo. (Recomendo o uso do Google Chrome, juntamente com Windows 10)
+Depois de clonar ou baixar o repositório, você pode abrir o arquivo `index.html` em seu navegador para iniciar o jogo.
 
+###### Para o correto funcionamento do minigame é necessário uma conexão com a internet, pois ele depende de bibliotecas externas, como os efeitos visuais e fontes, porém ele irá funcionar sem. Também recomendo o uso do Google Chrome, juntamente com Windows 10.
+ 
 ## Tecnologias Usadas
 
 - **HTML:** A estrutura básica da página do jogo.
@@ -49,6 +51,6 @@ Este projeto é licenciado sob a [MIT License](LICENSE). Sinta-se à vontade par
 
 ## Agradecimentos
 
-Agradecemos a todos os desenvolvedores e contribuidores que ajudaram a tornar este minigame possível. Esperamos que ele seja uma ferramenta útil e educacional para os alunos
+Espero que esse minigame seja uma ferramenta útil e educacional para os alunos. Se você gostou deste projeto, considere deixar uma estrela no repositório. Isso me ajudará a saber que você gostou do projeto e me motivará a continuar desenvolvendo-o.
 
 Divirta-se jogando e ajudando os alunos a aprimorar suas habilidades de sentenças lógicas!
