@@ -227,3 +227,32 @@ body{
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
+
+#resposta1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#resposta1 > h2{
+    font-size: 4rem;
+}
+
+#resposta1 > button{
+    background: var(--bg-btn);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#resposta1 > button:hover{
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
