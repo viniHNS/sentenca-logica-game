@@ -106,6 +106,7 @@ function responder1(resposta){
             }
             if(resposta == 'falso'){
                 document.getElementById('errou1').style.display = 'flex';
+                pontuacao += 10; //consolação
             }   
         } 
     })
@@ -128,7 +129,6 @@ function mostrarPergunta2(){
     setTimeout(function(){
         blocoDesafio.style.opacity = 1;
     }, 1000);
-
 }
 
 function responder2(resposta){
@@ -165,12 +165,11 @@ function responder2(resposta){
             }
             if(resposta == 'falso'){
                 document.getElementById('errou2').style.display = 'flex';
+                pontuacao += 10; //consolação
             }   
         } 
     })
 }
-
-
 
 
 // Particulas de fundo
