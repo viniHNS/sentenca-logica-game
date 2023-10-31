@@ -210,7 +210,7 @@ body{
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
-#desafio, #desafio2, #desafio3{
+#desafio, #desafio2, #desafio3, #desafio4{
     display: flex;
     color: var(--text-color);
     flex-direction: column;
@@ -258,7 +258,7 @@ body{
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
-#resposta1, #resposta2, #resposta3{
+#resposta1, #resposta2, #resposta3, #resposta4{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -406,3 +406,84 @@ body{
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
+
+#desafio4 > h2{
+    font-size: 4rem;
+}
+
+#desafio4 > .respostas{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+#desafio4 > .respostas > button{
+    background: var(--bg-btn);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    height: 70px;
+    width: 150px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}       
+
+#desafio4 > .respostas > .btn-resposta-verdade:hover{
+    background: var(--verde-escuro);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#desafio4 > .respostas > .btn-resposta-falso:hover{
+    background: var(--vermelho);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#resposta4 > h2{
+    font-size: 4rem;
+}
+
+#resposta4 > button{
+    background: var(--bg-btn);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#resposta4 > button:hover{
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#fim{
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#fim > h2{
+    font-size: 4rem;
+}
+
+#fim > p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+
+
