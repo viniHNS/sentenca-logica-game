@@ -17,7 +17,7 @@ git clone https://github.com/viniHNS/sentenca-logica-game.git
 ```
 Ou você pode baixar o repositório como um arquivo ZIP e extrair o arquivo em seu computador local.
 
-Depois de clonar o repositório ou baixar o repositório, você pode abrir o arquivo `index.html` em seu navegador para iniciar o jogo. (Recomendo o uso do Google Chrome, juntamente com Windows 10)
+Depois de clonar ou baixar o repositório, você pode abrir o arquivo `index.html` em seu navegador para iniciar o jogo. (Recomendo o uso do Google Chrome, juntamente com Windows 10)
 
 ## Tecnologias Usadas
 
