@@ -85,7 +85,7 @@ function responder1(resposta){
         cancelButtonColor: '#d33',
         confirmButtonText: 'Sim, tenho certeza',
         cancelButtonText: 'Não, quero trocar minha resposta'
-      }).then((result) => {
+    }).then((result) => {
         if (result.isConfirmed) {
             blocoDesafio.style.opacity = 0;
             blocoDesafio.style.transition = 'opacity 1s';
@@ -111,6 +111,69 @@ function responder1(resposta){
     })
 }
 
+function mostrarPergunta2(){
+
+    const blocoResposta = document.getElementById('resposta1');
+    const blocoDesafio = document.getElementById('desafio2');
+
+    blocoResposta.style.opacity = 0;
+    blocoResposta.style.transition = 'opacity 1s';
+    setTimeout(function(){
+        blocoResposta.style.display = 'none';
+    }, 1000);
+    
+    blocoDesafio.style.display = 'flex';
+    blocoDesafio.style.opacity = 0;
+    blocoDesafio.style.transition = 'opacity 1.5s';
+    setTimeout(function(){
+        blocoDesafio.style.opacity = 1;
+    }, 1000);
+
+}
+
+function responder2(resposta){
+    const blocoDesafio = document.getElementById('desafio2');
+    const blocoResposta = document.getElementById('resposta2');
+
+    Swal.fire({
+        title: 'Você tem certeza?',
+        text: "Não será possível reverter essa ação!",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim, tenho certeza',
+        cancelButtonText: 'Não, quero trocar minha resposta'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            blocoDesafio.style.opacity = 0;
+            blocoDesafio.style.transition = 'opacity 1s';
+            setTimeout(function(){
+                blocoDesafio.style.display = 'none';
+            }, 1000);
+
+            blocoResposta.style.display = 'flex';
+            blocoResposta.style.opacity = 0;
+            blocoResposta.style.transition = 'opacity 1.5s';
+            setTimeout(function(){
+                blocoResposta.style.opacity = 1;
+            }, 1000);
+
+            if(resposta == 'verdadeiro'){
+                document.getElementById('acertou2').style.display = 'flex';
+                pontuacao += 500 + Math.floor(Math.random() * 100);
+            }
+            if(resposta == 'falso'){
+                document.getElementById('errou2').style.display = 'flex';
+            }   
+        } 
+    })
+}
+
+
+
+
+// Particulas de fundo
 tsParticles.load("tsparticles", {
     particles: {
         number: {
@@ -123,7 +186,7 @@ tsParticles.load("tsparticles", {
             type: "circle"
         },
         opacity: {
-            value: 0.5,
+            value: 0.7,
             random: true
         },
         size: {
@@ -132,7 +195,7 @@ tsParticles.load("tsparticles", {
         },
         move: {
             enable: true,
-            speed: 2
+            speed: 1.5
         }
     },
     interactivity: {
