@@ -81,13 +81,30 @@
     <div id="resposta3" style="display: none">
       <h2 style="display: none;" id="acertou3" class="texto-verde">Você acertou!</h2>
       <h2 style="display: none;" id="errou3" class="texto-vermelho">Você errou!</h2>
-      <button type="button" onclick="">Continuar</button>
+      <button type="button" onclick="mostrarPergunta4()">Continuar</button>
     </div>
 
+    <div id="desafio4" style="display: none;">
+      <h2>5 NÃO é maior que 6</h2>
+      <div class="respostas">
+        <button type="button" class="btn-resposta-verdade" onclick="responder4('verdadeiro')">Verdadeiro</button>
+        <button type="button" class="btn-resposta-falso" onclick="responder4('falso')">Falso</button>
+      </div>
+    </div>
 
+    <div id="resposta4" style="display: none;">
+      <h2 style="display: none;" id="acertou4" class="texto-verde">Você acertou!</h2>
+      <h2 style="display: none;" id="errou4" class="texto-vermelho">Você errou!</h2>
+      <button type="button" onclick="mostrarPontuacao()">Continuar</button>
+    </div>
+
+    <div id="fim" style="display: none;">
+      <h2>Parabéns, você concluiu o desafio!</h2>
+      <h2>Seu resultado foi:</h2>
+      <h2 id="resultado"></h2>
+    </div>
   </section>
   
-
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://kit.fontawesome.com/62c44247f4.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
