@@ -23,6 +23,11 @@ body{
     background: #111111;
 }
 
+#tsparticles {
+    position: relative;
+    z-index: -1;
+}
+
 .texto-vermelho{
     color: var(--vermelho);
 }

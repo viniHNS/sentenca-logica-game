@@ -9,48 +9,52 @@
 </head>
 
 <body>
-  <div id="comeco">
-    <h1>Sentenças Lógicas</h1>
-    <button type="button" id="btn-comecar" onclick="comecarGame()">Começar</button>
-  </div>
-
-  <div id="explicacao" style="display: none;">
-    <h2>O que é uma sentença lógica? 🤔</h2>
-    <p>Sentença lógica é uma frase, geralmente curta, que possui somente 2 respostas: VERDADEIRO ou FALSO</p>
-    <button type="button" id="btn-continuar" onclick="mostrarExemplos()">Continuar</button>
-  </div>
-
-  <div id="exemplos" style="display: none;">
-    <h2>Alguns exemplos:</h2>
-    <ul>
-      <li>2 + 2 = 4 <span class="texto-verde bold">( VERDADE )</span></li>
-      <li>2 + 2 = 5 <span class="texto-vermelho bold">( FALSO )</span></li>
-      <li>5 = 55 <span class="texto-vermelho bold">( FALSO )</span></li>
-      <li>Gatos são Felinos <span class="texto-verde bold">( VERDADE )</span></li>
-    </ul>
-    <button type="button" id="btn-continuar-desafio" onclick="mostrarPreparados()">Continuar</button>
-  </div>
-
-  <div id="preparados" style="display: none;">
-    <h2>Vamos fazer um desafio 🤯</h2>
-    <h5>Você deve ler a sentença lógica e escolher se ela é <span class="texto-verde">VERDADEIRA</span> ou <span class="texto-vermelho">FALSA</span></h5>
-    <h5>Se você acertar, a sentença ficará <span class="texto-verde">verde</span>, se errar, ficará <span class="texto-vermelho">vermelha</span>.</h5>
-    <button type="button" id="btn-comecar-desafio" onclick="comecarDesafio()">Começar</button>
-  </div>
-
-  <div id="desafio" style="display: none;">
-    <h2>Cachorros são mamíferos.</h2>
-    <div class="respostas">
-      <button type="button" class="btn-resposta-verdade" onclick="responder1('verdadeiro')">Verdadeiro</button>
-      <button type="button" class="btn-resposta-falso" onclick="responder1('falso')">Falso</button>
+  <div id="tspasticles"></div>
+  <section style="z-index: 1;">
+    <div id="comeco">
+      <h1>Sentenças Lógicas</h1>
+      <button type="button" id="btn-comecar" onclick="comecarGame()">Começar</button>
+    </div>
+  
+    <div id="explicacao" style="display: none;">
+      <h2>O que é uma sentença lógica? 🤔</h2>
+      <p>Sentença lógica é uma frase, geralmente curta, que possui somente 2 respostas: VERDADEIRO ou FALSO</p>
+      <button type="button" id="btn-continuar" onclick="mostrarExemplos()">Continuar</button>
+    </div>
+  
+    <div id="exemplos" style="display: none;">
+      <h2>Alguns exemplos:</h2>
+      <ul>
+        <li>2 + 2 = 4 <span class="texto-verde bold">( VERDADE )</span></li>
+        <li>2 + 2 = 5 <span class="texto-vermelho bold">( FALSO )</span></li>
+        <li>5 = 55 <span class="texto-vermelho bold">( FALSO )</span></li>
+        <li>Gatos são Felinos <span class="texto-verde bold">( VERDADE )</span></li>
+      </ul>
+      <button type="button" id="btn-continuar-desafio" onclick="mostrarPreparados()">Continuar</button>
+    </div>
+  
+    <div id="preparados" style="display: none;">
+      <h2>Vamos fazer um desafio 🤯</h2>
+      <h5>Você deve ler a sentença lógica e escolher se ela é <span class="texto-verde">VERDADEIRA</span> ou <span class="texto-vermelho">FALSA</span></h5>
+      <h5>Se você acertar, a sentença ficará <span class="texto-verde">verde</span>, se errar, ficará <span class="texto-vermelho">vermelha</span>.</h5>
+      <button type="button" id="btn-comecar-desafio" onclick="comecarDesafio()">Começar</button>
+    </div>
+  
+    <div id="desafio" style="display: none;">
+      <h2>Cachorros são mamíferos.</h2>
+      <div class="respostas">
+        <button type="button" class="btn-resposta-verdade" onclick="responder1('verdadeiro')">Verdadeiro</button>
+        <button type="button" class="btn-resposta-falso" onclick="responder1('falso')">Falso</button>
+      </div> 
+    </div>
+  
+    <div id="resposta1" style="display: none;">
+      <h2 style="display: none;" id="acertou1" class="texto-verde">Você acertou!</h2>
+      <h2 style="display: none;" id="errou1" class="texto-vermelho">Você errou!</h2>
+      <button type="button">Continuar</button>
     </div> 
-  </div>
-
-  <div id="resposta1" style="display: none;">
-    <h2 style="display: none;" id="acertou1" class="texto-verde">Você acertou!</h2>
-    <h2 style="display: none;" id="errou1" class="texto-vermelho">Você errou!</h2>
-    <button type="button">Continuar</button>
-  </div> 
+  </section>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://kit.fontawesome.com/62c44247f4.js" crossorigin="anonymous"></script>

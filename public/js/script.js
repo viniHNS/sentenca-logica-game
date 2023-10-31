@@ -111,3 +111,45 @@ function responder1(resposta){
     })
 }
 
+tsParticles.load("tsparticles", {
+    particles: {
+        number: {
+            value: 150
+        },
+        color: {
+            value: "#ffffff"
+        },
+        shape: {
+            type: "circle"
+        },
+        opacity: {
+            value: 0.5,
+            random: true
+        },
+        size: {
+            value: 3,
+            random: true
+        },
+        move: {
+            enable: true,
+            speed: 2
+        }
+    },
+    interactivity: {
+        events: {
+            onhover: {
+                enable: true,
+                mode: "repulse"
+            }
+        },
+        modes: {
+            repulse: {
+                distance: 100,
+                duration: 0.4
+            }
+        }
+    },
+    background: {
+        color: "#000000"
+    }
+});
