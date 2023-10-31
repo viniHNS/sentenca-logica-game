@@ -230,6 +230,141 @@ function responder3(resposta){
     })
 }
 
+function mostrarPergunta4(){ 
+    const blocoResposta = document.getElementById('resposta3');
+    const blocoDesafio = document.getElementById('desafio4');
+        
+    blocoResposta.style.opacity = 0;
+    blocoResposta.style.transition = 'opacity 1s';
+    setTimeout(function(){
+        blocoResposta.style.display = 'none';
+    }, 1000);
+            
+    blocoDesafio.style.display = 'flex';
+    blocoDesafio.style.opacity = 0;
+    blocoDesafio.style.transition = 'opacity 1.5s';
+    setTimeout(function(){
+        blocoDesafio.style.opacity = 1;
+    }, 1000);
+}
+
+function responder4(resposta){
+    const blocoDesafio = document.getElementById('desafio4');
+    const blocoResposta = document.getElementById('resposta4');
+
+    Swal.fire({
+        title: 'Você tem certeza?',
+        text: "Não será possível reverter essa ação!",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim, tenho certeza',
+        cancelButtonText: 'Não, quero trocar minha resposta'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            blocoDesafio.style.opacity = 0;
+            blocoDesafio.style.transition = 'opacity 1s';
+            setTimeout(function(){
+                blocoDesafio.style.display = 'none';
+            }, 1000);
+
+            blocoResposta.style.display = 'flex';
+            blocoResposta.style.opacity = 0;
+            blocoResposta.style.transition = 'opacity 1.5s';
+            setTimeout(function(){
+                blocoResposta.style.opacity = 1;
+            }, 1000);
+
+            if(resposta == 'verdadeiro'){
+                document.getElementById('acertou4').style.display = 'flex';
+                pontuacao += 500 + Math.floor(Math.random() * 100);
+            }
+            if(resposta == 'falso'){
+                document.getElementById('errou4').style.display = 'flex';
+                pontuacao += 10; //consolação
+            }   
+        } 
+    })
+}
+
+function mostrarPontuacao(){
+    const blocoResposta = document.getElementById('resposta4');
+    const blocoPontuacao = document.getElementById('fim');
+
+    blocoResposta.style.opacity = 0;
+    blocoResposta.style.transition = 'opacity 1s';
+    setTimeout(function(){
+        blocoResposta.style.display = 'none';
+    }, 1000);
+            
+    blocoPontuacao.style.display = 'flex';
+    blocoPontuacao.style.opacity = 0;
+    blocoPontuacao.style.transition = 'opacity 1.5s';
+    setTimeout(function(){
+        blocoPontuacao.style.opacity = 1;
+        tsParticles.load("tsparticles", {
+            particles: {
+                number: {
+                    value: 200,
+                },
+                color: {
+                    value: ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"],
+                },
+                shape: {
+                    type: "circle",
+                },
+                size: {
+                    value: 10,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 5,
+                        size_min: 0.1,
+                        sync: false,
+                    },
+                },
+                line_linked: {
+                    enable: false,
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    out_mode: "out",
+                    random: false,
+                    speed: 5,
+                    straight: false,
+                },
+                opacity: {
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.05,
+                    },
+                },
+            },
+            interactivity: {
+                events: {
+                    onclick: {
+                        enable: true,
+                        mode: "push",
+                    },
+                },
+                modes: {
+                    push: {
+                        particles_nb: 1,
+                    },
+                },
+            },
+            retina_detect: false,
+        });
+    }, 1000);
+
+    pontuacao = Math.round(pontuacao);
+    document.getElementById('resultado').innerHTML = pontuacao;
+
+}
+
 // Particulas de fundo
 tsParticles.load("tsparticles", {
     particles: {
