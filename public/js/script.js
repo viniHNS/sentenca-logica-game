@@ -171,6 +171,64 @@ function responder2(resposta){
     })
 }
 
+function mostrarPergunta3(){
+    
+    const blocoResposta = document.getElementById('resposta2');
+    const blocoDesafio = document.getElementById('desafio3');
+    
+    blocoResposta.style.opacity = 0;
+    blocoResposta.style.transition = 'opacity 1s';
+    setTimeout(function(){
+        blocoResposta.style.display = 'none';
+    }, 1000);
+        
+    blocoDesafio.style.display = 'flex';
+    blocoDesafio.style.opacity = 0;
+    blocoDesafio.style.transition = 'opacity 1.5s';
+    setTimeout(function(){
+        blocoDesafio.style.opacity = 1;
+    }, 1000);
+}
+
+function responder3(resposta){
+    const blocoDesafio = document.getElementById('desafio3');
+    const blocoResposta = document.getElementById('resposta3');
+
+    Swal.fire({
+        title: 'Você tem certeza?',
+        text: "Não será possível reverter essa ação!",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim, tenho certeza',
+        cancelButtonText: 'Não, quero trocar minha resposta'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            blocoDesafio.style.opacity = 0;
+            blocoDesafio.style.transition = 'opacity 1s';
+            setTimeout(function(){
+                blocoDesafio.style.display = 'none';
+            }, 1000);
+
+            blocoResposta.style.display = 'flex';
+            blocoResposta.style.opacity = 0;
+            blocoResposta.style.transition = 'opacity 1.5s';
+            setTimeout(function(){
+                blocoResposta.style.opacity = 1;
+            }, 1000);
+
+            if(resposta == 'verdadeiro'){
+                document.getElementById('acertou3').style.display = 'flex';
+                pontuacao += 500 + Math.floor(Math.random() * 100);
+            }
+            if(resposta == 'falso'){
+                document.getElementById('errou3').style.display = 'flex';
+                pontuacao += 10; //consolação
+            }   
+        } 
+    })
+}
 
 // Particulas de fundo
 tsParticles.load("tsparticles", {
