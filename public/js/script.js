@@ -1,3 +1,6 @@
+console.log('%cPor favor, não utilize o console \nIsso pode causar problemas no seu jogo', 'color: red; font-size: 20px;');
+console.log('%cNão vá trapacear hein', 'color: red; font-size: 12px; font-weight: bold;');
+
 let pontuacao = 0;
 
 function comecarGame(){
