@@ -1,4 +1,4 @@
-# Minigame de Sentenças Lógicas
+# Minigame de Sentenças Lógicas ✅ ❎
 
 ## Descrição
 
@@ -10,7 +10,7 @@ O jogo é simples e intuitivo. Os jogadores serão apresentados a várias senten
 
 ## Como instalar
 
-Para instalar o jogo, basta clonar este repositório em seu computador local. Você pode fazer isso executando o seguinte comando em seu terminal:
+Para instalar o jogo, basta clonar este repositório em seu computador local, caso possua o GIT instalado. Você pode fazer isso executando o seguinte comando em seu terminal:
 
 ```bash
 git clone https://github.com/viniHNS/sentenca-logica-game.git
@@ -24,8 +24,8 @@ Depois de clonar ou baixar o repositório, você pode abrir o arquivo `index.htm
 ## Tecnologias Usadas
 
 - **HTML:** A estrutura básica da página do jogo.
-- **CSS:** Estilos e layout do jogo para torná-lo atraente e responsivo.
-- **JavaScript:** A lógica por trás do jogo, incluindo a geração de sentenças lógicas e a verificação de respostas.
+- **CSS:** Estilos e layout do jogo para torná-lo atraente e _responsivo (WIP)_.
+- **JavaScript:** A lógica por trás do jogo, incluindo a verificação de respostas, pontuações, etc.
 
 ## Bibliotecas Utilizadas
 
