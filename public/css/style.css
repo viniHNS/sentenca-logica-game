@@ -21,7 +21,43 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #111111;
+    -webkit-user-select: none;
+    user-select: none;
 }
+
+#amongus-character {
+    position: absolute;
+    bottom: 50%; /* Alterado para 50% para mover o personagem para o meio da tela */
+    left: -100px; /* Inicia fora da tela */
+    width: 100px;
+    height: auto;
+    animation: moverAmogus 12s linear, descendo 10s linear;
+    z-index: 0;
+}
+
+@keyframes moverAmogus {
+    0% { 
+        left: -100px; 
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% { 
+        left: 100%; 
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes descendo {
+    0% {
+        bottom: 50%;
+    }
+    100% {
+        bottom: 35%;
+    }
+}
+
 
 #tsparticles {
     position: relative;
