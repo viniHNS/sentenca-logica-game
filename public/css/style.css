@@ -210,7 +210,7 @@ body{
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
-#desafio{
+#desafio, #desafio2, #desafio3{
     display: flex;
     color: var(--text-color);
     flex-direction: column;
@@ -258,7 +258,7 @@ body{
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
-#resposta1{
+#resposta1, #resposta2, #resposta3{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,15 +285,6 @@ body{
     background: var(--bg-btn-hover);
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
-}
-
-#desafio2 {
-    display: flex;
-    color: var(--text-color);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 #desafio2 > h2{
@@ -335,14 +326,6 @@ body{
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
-#resposta2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 #resposta2 > h2{
     font-size: 4rem;
 }
@@ -362,15 +345,6 @@ body{
     background: var(--bg-btn-hover);
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
-}
-
-#desafio3 {
-    display: flex;
-    color: var(--text-color);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 #desafio3 > h2{
@@ -412,14 +386,6 @@ body{
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
 
-#resposta3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 #resposta3 > h2{
     font-size: 4rem;
 }
@@ -440,5 +406,3 @@ body{
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
-
-
