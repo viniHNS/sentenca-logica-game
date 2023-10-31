@@ -26,6 +26,7 @@
       <li>2 + 2 = 4 <span class="texto-verde bold">( VERDADE )</span></li>
       <li>2 + 2 = 5 <span class="texto-vermelho bold">( FALSO )</span></li>
       <li>5 = 55 <span class="texto-vermelho bold">( FALSO )</span></li>
+      <li>Gatos são Felinos <span class="texto-verde bold">( VERDADE )</span></li>
     </ul>
     <button type="button" id="btn-continuar-desafio" onclick="mostrarPreparados()">Continuar</button>
   </div>
@@ -42,8 +43,14 @@
     <div class="respostas">
       <button type="button" class="btn-resposta-verdade" onclick="responder1('verdadeiro')">Verdadeiro</button>
       <button type="button" class="btn-resposta-falso" onclick="responder1('falso')">Falso</button>
-    </div>  
+    </div> 
   </div>
+
+  <div id="resposta1" style="display: none;">
+    <h2 style="display: none;" id="acertou1" class="texto-verde">Você acertou!</h2>
+    <h2 style="display: none;" id="errou1" class="texto-vermelho">Você errou!</h2>
+    <button type="button">Continuar</button>
+  </div> 
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://kit.fontawesome.com/62c44247f4.js" crossorigin="anonymous"></script>
