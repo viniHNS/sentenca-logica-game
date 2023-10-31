@@ -27,12 +27,11 @@ body{
 
 #amongus-character {
     position: absolute;
-    bottom: 50%; /* Alterado para 50% para mover o personagem para o meio da tela */
+    bottom: 50%; /* Posiciona no centro da tela */
     left: -100px; /* Inicia fora da tela */
     width: 100px;
     height: auto;
-    animation: moverAmogus 12s linear, descendo 10s linear;
-    z-index: 0;
+    animation: moverAmogus 12s linear;
 }
 
 @keyframes moverAmogus {
@@ -48,16 +47,6 @@ body{
         transform: rotate(-360deg);
     }
 }
-
-@keyframes descendo {
-    0% {
-        bottom: 50%;
-    }
-    100% {
-        bottom: 35%;
-    }
-}
-
 
 #tsparticles {
     position: relative;
@@ -297,3 +286,81 @@ body{
     color: var(--text-color-hover);
     animation: btn-comecar 0.5s ease-in-out infinite alternate;
 }
+
+#desafio2 {
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#desafio2 > h2{
+    font-size: 4rem;
+}
+
+#desafio2 > .respostas{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+#desafio2 > .respostas > button{
+    background: var(--bg-btn);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    height: 70px;
+    width: 150px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#desafio2 > .respostas > .btn-resposta-verdade:hover{
+    background: var(--verde-escuro);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#desafio2 > .respostas > .btn-resposta-falso:hover{
+    background: var(--vermelho);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
+#resposta2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#resposta2 > h2{
+    font-size: 4rem;
+}
+
+#resposta2 > button{
+    background: var(--bg-btn);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#resposta2 > button:hover{
+    background: var(--bg-btn-hover);
+    color: var(--text-color-hover);
+    animation: btn-comecar 0.5s ease-in-out infinite alternate;
+}
+
