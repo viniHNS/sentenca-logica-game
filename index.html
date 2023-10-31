@@ -53,8 +53,22 @@
     <div id="resposta1" style="display: none;">
       <h2 style="display: none;" id="acertou1" class="texto-verde">Você acertou!</h2>
       <h2 style="display: none;" id="errou1" class="texto-vermelho">Você errou!</h2>
-      <button type="button">Continuar</button>
+      <button type="button" onclick="mostrarPergunta2()">Continuar</button>
     </div> 
+
+    <div id="desafio2" style="display: none;">
+      <h2>2 + 2 = 4</h2>
+      <div class="respostas">
+        <button type="button" class="btn-resposta-verdade" onclick="responder2('verdadeiro')">Verdadeiro</button>
+        <button type="button" class="btn-resposta-falso" onclick="responder2('falso')">Falso</button>
+      </div>
+    </div>
+
+    <div id="resposta2" style="display: none;">
+      <h2 style="display: none;" id="acertou2" class="texto-verde">Você acertou!</h2>
+      <h2 style="display: none;" id="errou2" class="texto-vermelho">Você errou!</h2>
+      <button type="button">Continuar</button>
+    </div>
   </section>
   
 
